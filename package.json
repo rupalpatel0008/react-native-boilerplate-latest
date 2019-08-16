@@ -8,11 +8,19 @@
     "lint": "eslint ./app",
     "fixcode": "eslint --fix ./app"
   },
-  "pre-commit": [
-    "lint",
-    "fixcode"
-  ],
+  "lint-staged": {
+    "app/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
+    "lint-staged": "^9.2.1",
     "react": "16.8.6",
     "react-native": "0.60.4"
   },
@@ -22,6 +30,7 @@
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.8.0",
     "eslint": "^6.0.1",
+    "husky": "^3.0.3",
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6"
