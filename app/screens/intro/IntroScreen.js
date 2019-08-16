@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  ScrollView,
-  View,
-  Text,
-  StatusBar
-} from 'react-native';
-  
+import { ScrollView, View, Text, StatusBar } from 'react-native';
+
 import {
   Header,
   LearnMoreLinks,
@@ -18,7 +13,7 @@ class IntroScreen extends React.Component {
   constructor(props) {
     super(props);
   }
-    
+
   render() {
     return (
       <View>
@@ -63,4 +58,3 @@ class IntroScreen extends React.Component {
 }
 
 export default IntroScreen;
-

@@ -5,11 +5,16 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint ./app",
+    "fixcode": "eslint --fix ./app"
   },
+  "pre-commit": [
+    "lint",
+    "fixcode"
+  ],
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.0"
+    "react-native": "0.60.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -18,7 +23,7 @@
     "babel-jest": "^24.8.0",
     "eslint": "^6.0.1",
     "jest": "^24.8.0",
-    "metro-react-native-babel-preset": "^0.55.0",
+    "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6"
   },
   "jest": {
