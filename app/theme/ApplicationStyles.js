@@ -1,11 +1,4 @@
-import {
-  Colors,
-  Metrics,
-  Fonts,
-  verticalScale,
-  moderateScale,
-  scale
-} from './';
+import { Colors, Metrics, verticalScale } from './';
 
 // This file is for a reusable grouping of Theme items.
 // Similar to an XML fragment layout in Android

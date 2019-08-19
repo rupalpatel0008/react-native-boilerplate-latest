@@ -10,7 +10,7 @@
   },
   "lint-staged": {
     "app/**/*.js": [
-      "npm run lint"
+      "npm run fixcode"
     ]
   },
   "husky": {
@@ -19,7 +19,6 @@
     }
   },
   "dependencies": {
-    "lint-staged": "^9.2.1",
     "react": "16.8.6",
     "react-native": "0.60.4"
   },
@@ -30,6 +29,7 @@
     "babel-jest": "^24.8.0",
     "eslint": "^6.0.1",
     "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6"
