@@ -1,6 +1,5 @@
 const type = {
   bold: 'AvenirNext-Bold'
-  
 };
 
 const size = {
@@ -12,7 +11,7 @@ const size = {
   h6: 19,
   input: 18,
   regular: 17,
-  medium: 14,  
+  medium: 14,
   small: 12,
   tiny: 8.5,
   label: 16

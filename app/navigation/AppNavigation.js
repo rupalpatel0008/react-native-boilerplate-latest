@@ -1,4 +1,8 @@
-import { createStackNavigator, createAppContainer, createSwitchNavigator } from 'react-navigation';
+import {
+  createStackNavigator,
+  createAppContainer,
+  createSwitchNavigator
+} from 'react-navigation';
 import IntroScreen from '../screens/intro/IntroScreen';
 const AuthStack = createStackNavigator(
   {
@@ -9,11 +13,10 @@ const AuthStack = createStackNavigator(
     headerMode: 'none',
     initialRouteName: 'IntroScreen',
     navigationOptions: {
-    //   headerStyle: styles.header
+      //   headerStyle: styles.header
     }
   }
 );
-  
 
 // Manifest of possible screens
 const PrimaryNav = createSwitchNavigator(
@@ -25,7 +28,7 @@ const PrimaryNav = createSwitchNavigator(
     headerMode: 'none',
     initialRouteName: 'AuthStack',
     navigationOptions: {
-    //   headerStyle: styles.header
+      //   headerStyle: styles.header
     }
   }
 );
