@@ -1,4 +1,4 @@
-import { Colors, Metrics, Fonts,verticalScale, moderateScale, scale } from './';
+import { Colors, Metrics, Fonts, verticalScale, moderateScale, scale } from './';
 
 // This file is for a reusable grouping of Theme items.
 // Similar to an XML fragment layout in Android
@@ -20,7 +20,7 @@ const ApplicationStyles = {
       backgroundColor: Colors.transparent,
       borderTopWidth: 0,
       elevation: 0,
-      marginBottom:verticalScale(20)
+      marginBottom: verticalScale(20)
     },
     whiteContainer: {
       flex: 1,
@@ -29,18 +29,18 @@ const ApplicationStyles = {
     noBorderStyle: {
       borderBottomWidth: Metrics.zero
     },
-    topBorderRadius:{ 
+    topBorderRadius: {
       borderTopLeftRadius: Metrics.textFieldRadius,
-      borderTopRightRadius: Metrics.textFieldRadius 
+      borderTopRightRadius: Metrics.textFieldRadius
     },
-    bottomBorderRadius:{ 
+    bottomBorderRadius: {
       borderBottomLeftRadius: Metrics.textFieldRadius,
-      borderBottomRightRadius: Metrics.textFieldRadius 
+      borderBottomRightRadius: Metrics.textFieldRadius
     },
-    topLeftBorderRadius:{ 
+    topLeftBorderRadius: {
       borderTopLeftRadius: Metrics.textFieldRadius
     },
-    topRightBorderRadius:{ 
+    topRightBorderRadius: {
       borderTopRightRadius: Metrics.textFieldRadius
     }
   }

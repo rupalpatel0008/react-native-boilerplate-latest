@@ -1,31 +1,41 @@
 import { createStackNavigator, createAppContainer, createSwitchNavigator } from 'react-navigation';
-import IntroScreen from '../screens/intro/IntroScreen';
+import LoginScreen from '../modules/auth/LoginScreen';
+import HomeScreen from '../modules/home/HomeScreen';
+
 const AuthStack = createStackNavigator(
   {
-    IntroScreen: { screen: IntroScreen }
+    LoginScreen: { screen: LoginScreen }
   },
   {
     // Default config for all screens
     headerMode: 'none',
-    initialRouteName: 'IntroScreen',
-    navigationOptions: {
-    //   headerStyle: styles.header
-    }
+    initialRouteName: 'LoginScreen'
   }
 );
-  
+
+const HomeStack = createStackNavigator(
+  {
+    HomeScreen: { screen: HomeScreen }
+  },
+  {
+    // Default config for all screens
+    headerMode: 'none',
+    initialRouteName: 'HomeScreen'
+  }
+);
 
 // Manifest of possible screens
 const PrimaryNav = createSwitchNavigator(
   {
-    AuthStack
+    AuthStack,
+    HomeStack
   },
   {
     // Default config for all screens
     headerMode: 'none',
     initialRouteName: 'AuthStack',
     navigationOptions: {
-    //   headerStyle: styles.header
+      //   headerStyle: styles.header
     }
   }
 );

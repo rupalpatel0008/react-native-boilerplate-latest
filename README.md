@@ -1,3 +1,77 @@
 # react-native-boilerplate-latest
 
 ## This is work in progress. Please check it out a few days later!
+
+- android
+- ios
+- app
+  - assets
+    - fonts
+    - images
+    - icons
+    - index.js
+    - README.md
+  - config
+    - index.js
+    - PushConfig.js
+  - constants
+    - Strings.js
+    - index.js
+    - ApiEndpoints.js
+    - README.md
+  - components
+    - styles
+      - TimerComponentStyles.js
+      - CustomInputStyles.js
+      - CustomHeaderStyles.js
+    - TimerComponent.js
+    - CustomInput.js
+    - CustomHeader.js
+  - modules/src
+    - Auth
+      - styles
+        - LoginStyles.js
+        - RegisterStyles.js
+      - Login.js
+      - Register.js
+    - Home
+    - Settings
+    - Other modules
+    - Stanalone screens(ex: about us, contact)
+      - styles
+        - AboutUsScreenStyles.js
+        - ContactScreenStyles.js
+      - AboutUsScreen.js
+      - ContactScreen.js
+    - App.js
+    - RootContainer.js
+    - README.md
+  - navigation
+    - styles
+    - AppNavigation.js
+    - ReduxNavigation.js
+    - README.md
+  - redux 
+    - actions
+    - reducers
+    - types
+    - index.js
+    - Store.js
+    - ReduxPersist.js
+    - README.md
+  - saga // saga should be module based
+    - AuthSagas.js 
+    - HomeSagas.js
+    - index.js
+    - README.md
+  - services
+    - ApiService.js // It should furter broken down to module level api calls in seperate files(like AuthApiService, HomeApiService.js)
+    - README.md
+    - CommonFunctions.js
+  - theme
+    - Colors.js
+    - ApplicationStyles.js
+    - Fonts.js
+    - Metrics.js
+    - index.js
+    - README.md
