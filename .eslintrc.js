@@ -1,12 +1,11 @@
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
+  "root": true,
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["@react-native-community", "eslint:recommended", "plugin:react/recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
