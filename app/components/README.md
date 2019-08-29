@@ -1,2 +1,1 @@
-### Components Folder
-All components are stored and organized here
+## All the custom/reusable component will be placed inside this folder.
